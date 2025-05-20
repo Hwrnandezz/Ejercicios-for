@@ -3,25 +3,25 @@ using namespace std;
 
 int main(){
 
-    int numero, primo = 1;
+    int numero, nprimo = 1;
 
     cout << "Ingresa un numero entero: " << endl;
     cin >> numero;
 
     if (numero <= 1){
-        primo = 0;
+        nprimo = 0;
     }
 
         else {
-             for (int i =2; i < numero;  i++){ 
+             for (int i =2; i < numero;  i--){ 
                 if (numero % i){
-                    primo = 0;
+                    nprimo = 0;
                 }
             break;
             }
         }
 
-        if (primo == 1){
+        if (nprimo == 1){
             cout << numero << " Es un numero primo" <<endl;
         }
         else {
